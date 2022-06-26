@@ -1,0 +1,149 @@
+{% extends 'main.html' %}
+
+{% block content  %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+
+        .fomula {
+            margin-top: 5%; 
+            margin-right: 10%;
+            color: #ffffff;
+            background-color: #002868;
+            margin-left: 30%;
+            padding: 1%;
+            border-radius: 4px;
+                      
+        }
+        .titu {
+            margin-top: 5%;
+            margin-left: 20%;
+            text-align: center;
+        }
+        .titu2 { 
+            margin-top: 5%;
+            margin-left: 20%;
+            text-align: center;
+        }
+        .titu3 { 
+            margin-top: 0%;
+            margin-left: 20%;
+            text-align: center;
+        }
+        .redes1 { 
+            display: none;
+        }
+
+        @media screen and (max-height: 450px) {
+            .fomula{margin-left: 0%; margin-right: 0%;}
+            .redes1 {display: block; text-align: center;}
+            .titu {text-align: center; margin-left: 0%; margin-right: 0%;}
+            .titu2 {text-align: center; margin-left: 0%; margin-right: 0%;}
+            .titu3 {text-align: center; margin-left: 0%; margin-right: 0%;}
+
+        }
+    </style>
+
+
+  </head>
+
+  <body>
+    <div class="titu">
+        <h2>Inscríbete a nuestros cursos y consigue tu B1 de Cambridge.</h2>
+    </div>
+     <form method="post" class="was-validated">
+       {% csrf_token %}
+       <div class="fomula">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Email*:</label>
+                <input name='email' type="email" class="form-control" id="inputEmail4" placeholder="Email@gmail.com" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputnombre">Nombre*:</label>
+                <input name='nombre' type="nombre" class="form-control" id="inputnombre" placeholder="Su nombre" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputapellidos">Apellidos*:</label>
+                <input name='apellidos' type="apellidos" class="form-control" id="inputapellidos" placeholder="Sus apellidos" required>
+            </div>
+        </div>
+        <div class="form-row">
+
+            <div class="form-group col-md-4">
+                <label for="inputtelefono">Número de Telefono*:</label>
+                <input name='telefono' type="telefono" class="form-control" id="inputtelefono" placeholder="El número donde prefiera que le llamemos" required>
+            </div>
+            
+            
+        
+            <div class="form-group col-md-4">
+                <label for="inputcurso">Curso*:</label>
+                <input name='curso' type="curso" class="form-control" id="inputcurso" placeholder="Escriba: Intensivo de un mes o de dos semanas" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputmes">Mes*:</label>
+                <input name='mes' type="mes" class="form-control" id="inputmes" placeholder="Escriba Julio o Agosto" required>
+            </div>
+        </div>
+                         
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                  Estoy de acuerdo con las condiciones y términos de uso.
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-danger" style="margin-left: 50%;">Enviar</button>
+          </form>
+        </div>
+        </div>
+        <div class="titu2">
+            <h5>En breve te enviaremos un correo con toda la información que necesites como métodos de pago, horarios, tu plan de estudios personalizado, nuestro ebook.</h5>
+        </div>
+        <div class="titu3">
+            <h5>Para cualquier duda, consulta o preguntas que puedas tener, no dudes en contactarnos mediante nuestras redes sociales o nuestro número de telefono 603702724.</h5>
+        </div>
+        <div class="redes1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="210.667" height="39.78" viewBox="0 0 210.667 39.78" style="width: 50%; position: relative;">
+                <g id="Grupo_83" data-name="Grupo 83" transform="translate(-69.667 -928.224)">
+                  <g id="Grupo_84" data-name="Grupo 84">
+                    <g id="Grupo_19" data-name="Grupo 19" transform="translate(-559.333 293.224)">
+                      <a xlink:href="https://www.facebook.com/B1withEnglish/">
+                        <path id="Icon_ionic-logo-facebook" data-name="Icon ionic-logo-facebook" d="M42.08,4.5H6.7A2.2,2.2,0,0,0,4.5,6.7V42.08a2.2,2.2,0,0,0,2.2,2.2H24.388V28.531H19.634v-5.8h4.755V18.442c0-5.138,3.563-7.935,8.152-7.935,2.2,0,4.558.166,5.107.238v5.366H33.99c-2.5,0-2.973,1.181-2.973,2.921v3.7h5.946l-.777,5.8H31.017V44.276H42.08a2.2,2.2,0,0,0,2.2-2.2V6.7A2.2,2.2,0,0,0,42.08,4.5Z" transform="translate(624.5 630.5)" fill="#002868"/>
+                      </a>
+                      <a xlink:href="https://wa.me/message/4GWAONGZ3EYLP1">
+                      <path id="Icon_ionic-logo-whatsapp" data-name="Icon ionic-logo-whatsapp" d="M22.5,2.25A19.452,19.452,0,0,0,2.972,21.626a19.176,19.176,0,0,0,2.8,10.005L2.25,42.026l10.811-3.434A19.56,19.56,0,0,0,42.026,21.626,19.452,19.452,0,0,0,22.5,2.25Zm9.71,26.734c-.459,1.139-2.537,2.178-3.454,2.226s-.942.71-5.934-1.459-8-7.444-8.232-7.784a9.576,9.576,0,0,1-1.842-5.19,5.533,5.533,0,0,1,1.9-4.06A1.912,1.912,0,0,1,16,12.148c.393-.006.648-.012.939,0s.727-.061,1.105.945,1.282,3.476,1.4,3.728a.9.9,0,0,1,.009.868,3.391,3.391,0,0,1-.529.806c-.261.279-.548.625-.781.839-.259.237-.53.495-.257,1a14.942,14.942,0,0,0,2.644,3.528,13.624,13.624,0,0,0,3.915,2.6c.49.267.782.237,1.086-.082s1.3-1.4,1.651-1.88.68-.388,1.131-.207,2.855,1.47,3.345,1.736.816.4.933.613A4.1,4.1,0,0,1,32.209,28.984Z" transform="translate(797.64 632.75)" fill="#002868"/>
+                      </a>
+                    </g>
+                    <g id="Grupo_82" data-name="Grupo 82" transform="translate(152.11 925.224)">
+                      <a xlink:href="https://www.instagram.com/b1.with.english/">
+                      <circle id="Elipse_1" data-name="Elipse 1" cx="4" cy="4" r="4" transform="translate(18.89 18.89)" fill="#002868"/>
+                      <path id="Trazado_15" data-name="Trazado 15" d="M31.176,3H14.6A11.616,11.616,0,0,0,3,14.6V31.179a11.616,11.616,0,0,0,11.6,11.6H31.179a11.616,11.616,0,0,0,11.6-11.6V14.6A11.616,11.616,0,0,0,31.176,3ZM22.89,32.835a9.945,9.945,0,1,1,9.945-9.945A9.955,9.955,0,0,1,22.89,32.835Zm11.6-19.89a1.657,1.657,0,1,1,1.657-1.657A1.658,1.658,0,0,1,34.493,12.945Z" fill="#002868"/>
+                      </a>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+        </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+{% endblock content %}

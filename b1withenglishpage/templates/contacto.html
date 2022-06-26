@@ -1,0 +1,81 @@
+{% extends 'main.html' %}
+
+
+{% block content  %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <style>
+        .formulario {        
+        margin-top: 10%; 
+        margin-right: 10%;
+        color: #ffffff;
+        background-color: #002868;
+        margin-bottom: 4%;
+        margin-left: 30%;
+        padding: 2%;
+        border-radius: 4px;
+        }
+        .titulo {
+            margin-top: 5%;
+            margin-left: 20%;
+            text-align: center;
+            color: #002868;
+        }
+        .abajo {
+            margin-top: 5%;
+            margin-left: 20%;
+            text-align: center;
+            color: #002868;
+        }
+        .redes1{
+            display: none;
+        }
+
+        @media screen and (max-height: 450px) {
+            .titulo {margin-left: 2%;}
+            .abajo {margin-left: 2%;}
+            .formulario {margin-left: 0%; margin-right: 0%;}
+            .redes1 {display: block; text-align: center;}
+        }
+    </style>
+
+<div class="titulo">
+    <h1>Preguntanos sin compromiso</h1>
+</div>
+
+
+<div class="formulario">
+    {% include 'formulario.html' %}
+</div>
+
+<div class="abajo">
+    <p>Después de darle a enviar, nos pondremos en contacto y resolveremos las dudas que puedas tener.</p> 
+    <p>También nos puedes contactar a través de nuestro numero de teléfono <strong> 603702724 </strong>  o de nuestras redes sociales.</p>   
+</div>
+
+<div class="redes1"> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="210.667" height="39.78" viewBox="0 0 210.667 39.78" style="width: 30%; position: relative;">
+      <g id="Grupo_83" data-name="Grupo 83" transform="translate(-69.667 -928.224)">
+        <g id="Grupo_84" data-name="Grupo 84">
+          <g id="Grupo_19" data-name="Grupo 19" transform="translate(-559.333 293.224)">
+            <a xlink:href="https://www.facebook.com/B1withEnglish/">
+              <path id="Icon_ionic-logo-facebook" data-name="Icon ionic-logo-facebook" d="M42.08,4.5H6.7A2.2,2.2,0,0,0,4.5,6.7V42.08a2.2,2.2,0,0,0,2.2,2.2H24.388V28.531H19.634v-5.8h4.755V18.442c0-5.138,3.563-7.935,8.152-7.935,2.2,0,4.558.166,5.107.238v5.366H33.99c-2.5,0-2.973,1.181-2.973,2.921v3.7h5.946l-.777,5.8H31.017V44.276H42.08a2.2,2.2,0,0,0,2.2-2.2V6.7A2.2,2.2,0,0,0,42.08,4.5Z" transform="translate(624.5 630.5)" fill="#002868"/>
+            </a>
+            <a xlink:href="https://wa.me/message/4GWAONGZ3EYLP1">
+            <path id="Icon_ionic-logo-whatsapp" data-name="Icon ionic-logo-whatsapp" d="M22.5,2.25A19.452,19.452,0,0,0,2.972,21.626a19.176,19.176,0,0,0,2.8,10.005L2.25,42.026l10.811-3.434A19.56,19.56,0,0,0,42.026,21.626,19.452,19.452,0,0,0,22.5,2.25Zm9.71,26.734c-.459,1.139-2.537,2.178-3.454,2.226s-.942.71-5.934-1.459-8-7.444-8.232-7.784a9.576,9.576,0,0,1-1.842-5.19,5.533,5.533,0,0,1,1.9-4.06A1.912,1.912,0,0,1,16,12.148c.393-.006.648-.012.939,0s.727-.061,1.105.945,1.282,3.476,1.4,3.728a.9.9,0,0,1,.009.868,3.391,3.391,0,0,1-.529.806c-.261.279-.548.625-.781.839-.259.237-.53.495-.257,1a14.942,14.942,0,0,0,2.644,3.528,13.624,13.624,0,0,0,3.915,2.6c.49.267.782.237,1.086-.082s1.3-1.4,1.651-1.88.68-.388,1.131-.207,2.855,1.47,3.345,1.736.816.4.933.613A4.1,4.1,0,0,1,32.209,28.984Z" transform="translate(797.64 632.75)" fill="#002868"/>
+            </a>
+          </g>
+          <g id="Grupo_82" data-name="Grupo 82" transform="translate(152.11 925.224)">
+            <a xlink:href="https://www.instagram.com/b1.with.english/">
+            <circle id="Elipse_1" data-name="Elipse 1" cx="4" cy="4" r="4" transform="translate(18.89 18.89)" fill="#002868"/>
+            <path id="Trazado_15" data-name="Trazado 15" d="M31.176,3H14.6A11.616,11.616,0,0,0,3,14.6V31.179a11.616,11.616,0,0,0,11.6,11.6H31.179a11.616,11.616,0,0,0,11.6-11.6V14.6A11.616,11.616,0,0,0,31.176,3ZM22.89,32.835a9.945,9.945,0,1,1,9.945-9.945A9.955,9.955,0,0,1,22.89,32.835Zm11.6-19.89a1.657,1.657,0,1,1,1.657-1.657A1.658,1.658,0,0,1,34.493,12.945Z" fill="#002868"/>
+            </a>
+          </g>
+        </g>
+      </g>
+    </svg>
+</div>
+{% endblock content %}
